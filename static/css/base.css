@@ -3,6 +3,7 @@ body {
 	margin:0;
 	padding:0;
 	height:100%;
+	font-family:sans-serif;
 }
 #wrapper {
 	min-height:100%;
@@ -23,4 +24,54 @@ body {
 	bottom:0;
 	left:0;
 	background:#ee5;
+}
+
+p {
+	padding:0px 0px 10px 0px;
+	margin:0;
+}
+
+h1 {
+	font-family:"Raleway";
+	font-weight:400;
+	font-size:30pt;
+	text-align:center;
+}
+
+h2 {
+	font-weight:400;
+}
+
+form {
+	margin:auto;
+	background-color:#fff;
+	border:1px solid #ddd;
+	padding:10px 30px 30px 30px;
+}
+
+form input[type=text], form input[type=password], form input[type=email] {
+	font-size:14pt;
+	padding:3px;
+	width:400px;
+}
+
+form label {
+	display:block;
+}
+
+form input[type=submit] {
+	font-size:16pt;
+}
+
+form p {
+	margin:0px 0px 10px 0px;
+}
+
+form h1 {
+	font-size:20pt;
+}
+
+#fixed-width {
+	width:800px;
+	margin:auto;
 }

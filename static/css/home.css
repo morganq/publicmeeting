@@ -1,0 +1,22 @@
+#signup {
+	background-color:#eef;
+	padding:20px;
+}
+
+#registrations {
+	background-color:#fec;
+	padding:20px;
+	margin:20px 0px;
+}
+
+#registrations h1 {
+	font-size:22pt;
+}
+
+#registrations ul {
+	list-style:none;
+}
+
+#registrations ul li {
+	margin-bottom:6px;
+}
