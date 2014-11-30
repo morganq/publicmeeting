@@ -1,0 +1,62 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+<html>
+<head>
+	<!-- facebook -->
+	<meta property="og:title" content="" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:description" content="" />
+	<meta property="fb:admins" content="" />
+
+	<!-- for Twitter -->          
+  <meta name="twitter:title" content="" />
+	<meta name="twitter:card" content="" />
+	<meta name="twitter:description" content="" />
+	<meta name="twitter:image" content="" />
+	
+	<!-- for Google -->
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+	<meta name="copyright" content="" />
+	<meta name="application-name" content="" />
+
+	<title>Public Meeting</title>
+	<link rel='stylesheet' href='{% static "css/base.css" %}' type='text/css'/>
+  <link rel="stylesheet" href='{% static "css/screen.css" %}' media="screen"/>
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,100,200,300' rel='stylesheet' type='text/css'/>
+
+  {% block styles %} {% endblock %}
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+  <script>
+  //Google Analytics
+  </script>
+  <script src='{% static "js/base.js" %}'></script>
+  {% block scripts %} {% endblock %}
+
+</head>
+
+<body>
+  {% block bodyscripts %} 
+  {% endblock %}
+  <div id="wrapper">
+    <div id="header">
+
+    </div>
+    <div id="content"> 
+      {% block content %}{% endblock %}
+    </div>
+    <div id="footer">
+      <div id="footer-content">
+      | <a href="/about/" target="_blank">About</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

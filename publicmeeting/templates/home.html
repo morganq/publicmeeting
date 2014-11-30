@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<h1>Hello world</h1>
+<ul>
+	{% for reg in registrations %}
+	<li>
+		<span class="first_name">reg.first_name</span>
+		- <span class="email_address">(Email Address Hidden)</span>
+		- <span class="availability">reg.availability</span>
+	</li>
+	{% endfor %}
+</ul>
+<form method=POST action=/>
+{% csrf_token %}
+{{ form }}
+<input type="submit"/>
+</form>
+{% endblock %}
