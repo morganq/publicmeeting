@@ -6,8 +6,12 @@ from publicmeeting.forms import *
 
 def home(request):
 	if request.method=='POST':
-		pass
+		form = RegistrationForm(request.POST)
+		if form.is_valid():
+			form.save()
+			return HttpResponseRedirect("/")
 	else:
 		registrations = Registration.objects.order_by('first_name')
 		form = RegistrationForm()
-		return render(request, "home.html", {registrations:registrations, form:form})
+		print form
+		return render(request, "home.html", {"registrations":registrations, "form":form})
